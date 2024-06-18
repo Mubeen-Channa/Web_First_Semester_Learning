@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Button Click Functions</title>
+    <style>
+        #color{
+            width: 200px; height: 100px; background-color: blueviolet; display: flex; justify-content: center; align-items: center;
+        }
+        #color input{
+            background-color: blueviolet; color: white; border-style: none;
+            height: 100%; width: 100%;
+        }
+    </style> 
+</head>
+<body>
+    <!-- Change Text With Button -->
+    <div>
+        <p id="mytext"> Hello World! </p>
+        <input type="button" value="Click Me" onclick="changetext()">
+    </div><br><hr><br>
+
+    <!-- Toggle -->
+    <div>
+        <p id="gaib"> Please Dont Remove Me </p>
+        <input type="button" value="Gaib" onclick="gaib()" id="btn">
+    </div><br><hr><br> 
+    
+    <!-- Chnage Img -->
+    <div>
+        <img src="Images/1.jpg" alt="" width="200px" id="img"> <br>
+        <input type="button" value="Change Image" onclick="changeImg()">
+    </div><br><hr><br>
+
+    <!-- Change Background Color -->
+    <div id="color">
+        <input type="button" value="Click for Change Color" onclick="changeBackColor()" id="btnBackColor">
+    </div><br><hr><br>
+
+
+    <script src="_2_Button_Click.js"></script>
+</body>
+</html>
