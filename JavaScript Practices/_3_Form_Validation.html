@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form Validation</title>
+
+    <style>
+      .form{
+        display: flex;  
+      } 
+
+      form {
+        display: flex;
+        flex-direction: column;
+        margin: 20vh auto;
+        padding: 100px 40px;
+        border: 1px solid black;
+      }
+      
+      label{
+        margin-top: 10px;
+      }
+
+      input{
+        width: 300px;
+        height: 20px;
+      }
+
+      input[type="submit"] {
+        margin-top: 20px;
+        width: 307px;
+        background-color: rgb(60, 176, 2);
+        border: none;
+        height: 2rem;
+        color: rgb(242, 242, 242);    
+        transition: 1s;    
+      }
+
+      input[type="submit"]:active {
+        transform: scale(1.01);       
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <form action="#" onsubmit="return validateForm()" id="form">
+        <label for="name">Name: </label>
+        <input type="text" name="" id="name" placeholder="Enter Your Name" />
+<!-- <br> -->
+        <label for="password">Password: </label>
+        <input type="password" name="" id="password" placeholder="Enter Your Password" />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <script src="_3_Form_Validation.js"></script>
+  </body>
+</html>
