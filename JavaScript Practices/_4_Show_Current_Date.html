@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Current Date & Time</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <p id="dateTime"></p>
+    <input type="button" onclick="showDateTime()" value="Click To Show Date and Time">
+
+    <script>
+        function showDateTime(){
+            document.getElementById("dateTime").innerHTML = new Date();
+        }
+    </script>
+</body>
+</html>
