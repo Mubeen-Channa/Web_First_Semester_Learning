@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stop Watch in JS</title>
+    <!-- CSS -->
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <div class="container">
+        <div>
+        <p class="timer">00:00:00</p>
+    </div>
+    <div class="btn">
+        <input type="button" value="Start" onclick="start()" id="start-stop">
+        <input type="button" value="Reset" onclick="reset()">
+    </div>
+    </div>
+
+    <!-- JavaScript -->
+     <script>
+        let name = document.getElementById("start-stop");
+
+        function start(){
+            if(name.value == "Start"){
+                name.value = "Stop";
+            }
+            else{
+                name.value = "Start";
+            }
+        }
+
+        function reset(){
+
+        }
+     </script>
+</body>
+</html>
