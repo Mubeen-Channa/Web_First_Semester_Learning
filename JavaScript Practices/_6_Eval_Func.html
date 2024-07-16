@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eval Function</title>
+    <style>
+        #result{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="input" id="input">
+    <input type="button" value="=" onclick="result()">
+    <h1> Result: </h1>
+    <h1 id="result"> 0 </h1>
+    <script>
+        function result(){
+            var x = document.getElementById("input").value;
+            document.getElementById("result").innerHTML = eval(x);
+        }
+    </script>
+</body>
+</html>
