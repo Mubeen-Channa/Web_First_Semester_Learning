@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Click Counter</title>
+    <style>
+      button {
+        background: orange;
+        padding: 10px;
+      }
+      span {
+        font-weight: bold;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Clicked: <span id="count">0</span> times</h2>
+    <button onclick="increment()">Click Me</button>
+
+    <script>
+      let count = 0;
+      function increment() {
+        count++;
+        document.getElementById("count").innerText = count;
+      }
+    </script>
+  </body>
+</html>
