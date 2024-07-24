@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show/Hide Text</title>
+    <style>
+      #message {
+        color: purple;
+        font-weight: bold;
+      }
+      button {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="message">This is a secret message.</p>
+    <button onclick="toggleText()">Show/Hide</button>
+
+    <script>
+      function toggleText() {
+        let text = document.getElementById("message");
+        text.style.display = text.style.display === "none" ? "block" : "none";
+      }
+    </script>
+  </body>
+</html>
