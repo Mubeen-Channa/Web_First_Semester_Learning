@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Color</title>
+    <style>
+      body {
+        text-align: center;
+        padding: 20px;
+      }
+      button {
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Click to Change Background Color</h2>
+    <button onclick="changeColor()">Change</button>
+
+    <script>
+      function changeColor() {
+        const colors = [
+          "lightblue",
+          "lightgreen",
+          "pink",
+          "yellow",
+          "lavender",
+        ];
+        document.body.style.backgroundColor =
+          colors[Math.floor(Math.random() * colors.length)];
+      }
+    </script>
+  </body>
+</html>
