@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Hover</title>
+    <style>
+      img {
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="Images/1.jpg"
+      onmouseover="hoverImage(this)"
+      onmouseout="resetImage(this)"
+    />
+
+    <script>
+      function hoverImage(img) {
+        img.src = "Images/2.jpg";
+      }
+      function resetImage(img) {
+        img.src = "Images/1.jpg";
+      }
+    </script>
+  </body>
+</html>
