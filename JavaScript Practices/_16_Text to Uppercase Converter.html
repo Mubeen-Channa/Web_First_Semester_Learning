@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uppercase Converter</title>
+    <style>
+      input,
+      button {
+        padding: 10px;
+        margin: 5px;
+      }
+      span {
+        font-weight: bold;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="text" placeholder="Enter text" />
+    <button onclick="convert()">Uppercase</button>
+    <p>Result: <span id="output"></span></p>
+
+    <script>
+      function convert() {
+        const value = document.getElementById("text").value;
+        document.getElementById("output").innerText = value.toUpperCase();
+      }
+    </script>
+  </body>
+</html>
