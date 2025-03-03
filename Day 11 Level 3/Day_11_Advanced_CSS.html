@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11: Advanced CSS</title>
+    <style>
+        /* Attribute Selector */
+        input[type="text"] {
+            background-color: lightblue;
+        }
+
+        /* Pseudo-classes */
+        a:hover {
+            color: red;
+        }
+
+        tr:nth-child(even) {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advanced CSS Selectors</h1>
+    <form>
+        <input type="text" placeholder="Text Input">
+        <input type="password" placeholder="Password Input">
+    </form>
+    <table border="1">
+        <tr><td>Row 1</td></tr>
+        <tr><td>Row 2</td></tr>
+        <tr><td>Row 3</td></tr>
+	<tr><td>Row 4</td></tr>
+    </table>
+    <a href="#">Hover over me</a>
+</body>
+</html>

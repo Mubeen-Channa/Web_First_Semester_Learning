@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 14: Functions & Events</title>
+</head>
+<body>
+    <h1>JavaScript Functions and Events</h1>
+    <button id="alertButton">Click Me</button>
+    <input type="text" id="textInput" placeholder="Type something...">
+    <script>
+        // Function Example
+        function square(num) {
+            return num * num;
+        }
+        console.log("Square of 4:", square(4));
+
+        // Event Example: Button Click
+        document.getElementById("alertButton").onclick = function() {
+            alert("Button was clicked!");
+        };
+
+        // Event Example: Input Keydown
+        document.getElementById("textInput").onkeydown = function() {
+            console.log("You are typing...");
+        };
+    </script>
+</body>
+</html>

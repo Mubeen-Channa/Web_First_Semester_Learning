@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12: Transitions & Animations</title>
+    <style>
+        /* Transition Example */
+        button {
+            background-color: lightblue;
+            transition: background-color 0.5s ease;
+        }
+
+        button:hover {
+            background-color: lightcoral;
+        }
+
+        /* Animation Example */
+        @keyframes moveBox {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(500px);
+            }
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            animation: moveBox 2s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Transitions and Animations</h1>
+    <button>Hover over me</button>
+    <div class="box"></div>
+</body>
+</html>
